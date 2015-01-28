@@ -23,14 +23,17 @@ h3 {
 }
 
 .item {
-
+	font-weight: bold;
+	text-indent: 50px;
 }
 .position {
-
+	font-style: italic;
+	text-indent: 75px;
 }
 .itemDesc {
-
+	list-style-position: inside;
+	text-indent: 100px;
 }
 .itemDesc2 {
+	text-indent: 125px;
 
-}
