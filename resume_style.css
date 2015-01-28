@@ -19,8 +19,13 @@ h3 {
 
 }
 
+
 .contact {
 	text-align: center;
+}
+
+td.contact {
+	width="33%;
 }
 
 .item, #skills {
