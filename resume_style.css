@@ -22,9 +22,11 @@ h3 {
 	text-align: center;
 }
 
+.item, #skills {
+	text-indent: 50px;
+}
 .item {
 	font-weight: bold;
-	text-indent: 50px;
 }
 .position {
 	font-style: italic;
@@ -36,4 +38,4 @@ h3 {
 }
 .itemDesc2 {
 	text-indent: 125px;
-
+}
