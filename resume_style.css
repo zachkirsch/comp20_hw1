@@ -22,11 +22,12 @@ h3 {
 
 .contact {
 	text-align: center;
-	width = "100%";
+	width: 100%;
+	border: 0;
 }
 
 td.contact {
-	width="33%;
+	width:33%;
 }
 
 .item, #skills {
