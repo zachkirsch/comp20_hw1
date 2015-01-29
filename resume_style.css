@@ -19,6 +19,14 @@ td.contact {
 	width:33%;
 }
 
+#name {
+	color: black;
+	text-decoration: none;
+}
+#name:hover {
+	color: #00b200;
+}
+
 .item, #skills {
 	text-indent: 50px;
 }
