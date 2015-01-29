@@ -15,3 +15,12 @@ h1 {
 	width: 200px
 	height: 200px
 }
+
+p {
+	font-size: 175%;
+}
+
+.center {
+	text-align: center;
+}
+
