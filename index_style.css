@@ -24,6 +24,18 @@ p {
 	text-align: center;
 }
 
-.blue {
+.link {
 	color: #003399
+}
+.link:link {
+	text-decoration: none;
+}
+.link:visited {
+	text-decoration: none;
+}
+.link:hover {
+	text-decoration: underline;
+}
+.link:active {
+	text-decoration: underline;
 }
