@@ -15,15 +15,20 @@ function feed() {
 	my_login = "zach";
 	my_lat = "100";
 	my_lng = "200";
+
+	request.onreadystatechange = function {
+		if (request.readyState == 4) {
+				// NOW GET
+			xhr = new XMLHttpRequest();
+			login = "zach"
+			xhr.open("GET", "https://protected-meadow-7856.herokuapp.com/location.json?login=" + login, true);
+
+			xhr.send();
+		}
+	};
 	request.send("login=" + my_login + "&lat=" + my_lat + "&lng=" + my_lng);
 	//request.send("login=" + my_login + "&lng=" + my_lng);
 
-	// NOW GET
-	xhr = new XMLHttpRequest();
-	login = "zach"
-	xhr.open("GET", "https://protected-meadow-7856.herokuapp.com/location.json?login=" + login, true);
-
-	xhr.send();
 
 
 }
