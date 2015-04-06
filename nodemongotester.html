@@ -12,9 +12,9 @@ function sendGPS() {
 	// Step 3: Set up way to manage response --to a function
 
 	// Step 4: Execute the request
-	my_login = document.getElementById("name");
-	my_lat = document.getElementById("lat");
-	my_lng = document.getElementById("lng");
+	my_login = document.getElementById("name").value;
+	my_lat = document.getElementById("lat").value;
+	my_lng = document.getElementById("lng").value;
 
 	request.send("login=" + my_login + "&lat=" + my_lat + "&lng=" + my_lng);
 }
