@@ -16,7 +16,16 @@ function feed() {
 	my_lat = "100";
 	my_lng = "200";
 
-	request.onreadystatechange = function {
+	request.onreadystatechange = get_now;
+	request.send("login=" + my_login + "&lat=" + my_lat + "&lng=" + my_lng);
+	//request.send("login=" + my_login + "&lng=" + my_lng);
+
+
+
+}
+
+
+function get_now() {
 		if (request.readyState == 4) {
 				// NOW GET
 			xhr = new XMLHttpRequest();
@@ -25,13 +34,6 @@ function feed() {
 
 			xhr.send();
 		}
-	};
-	request.send("login=" + my_login + "&lat=" + my_lat + "&lng=" + my_lng);
-	//request.send("login=" + my_login + "&lng=" + my_lng);
-
-
-
-}
 </script>
 </head>
 
