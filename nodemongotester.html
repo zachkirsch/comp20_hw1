@@ -17,12 +17,13 @@ function feed() {
 	my_lng = "200";
 	request.send("login=" + my_login + "&lat=" + my_lat + "&lng=" + my_lng);
 	//request.send("login=" + my_login + "&lng=" + my_lng);
+
 	// NOW GET
 	xhr = new XMLHttpRequest();
-	xhr.open("GET", "https://protected-meadow-7856.herokuapp.com/location.json", true);
-
 	login = "zach"
-	xhr.send("login=" + login);
+	xhr.open("GET", "https://protected-meadow-7856.herokuapp.com/location.jsoni&login=" + login, true);
+
+	xhr.send();
 
 
 }
