@@ -7,12 +7,12 @@ function feed() {
 
 	// Step 2: create or open HTTP request
 	request.open("POST", "https://thawing-dawn-5935.herokuapp.com/feedme", true);
-
+	request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	// Step 3: Set up way to manage response --to a function
 //	request.onreadystatechange = parseData;
 
 	// Step 4: Execute the request
-	request.send();
+	request.send("fooditem=banana");
 }
 </script>
 </head>
