@@ -1,39 +1,22 @@
 <html>
 <head>
 <script>
-function feed() {
+function sendGPS {
 	// Step 1: create instance of object
 	request = new XMLHttpRequest();
 
 	// Step 2: create or open HTTP request
 	request.open("POST", "https://protected-meadow-7856.herokuapp.com/sendLocation", true);
 	request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
 	// Step 3: Set up way to manage response --to a function
-//	request.onreadystatechange = parseData;
 
 	// Step 4: Execute the request
-	my_login = "joey";
-	my_lat = "133";
-	my_lng = "2333";
+	my_login = document.getElementById("name");
+	my_lat = document.getElementById("lat");
+	my_lng = document.getElementById("lng");
 
-	request.onreadystatechange = get_now;
 	request.send("login=" + my_login + "&lat=" + my_lat + "&lng=" + my_lng);
-	//request.send("login=" + my_login + "&lng=" + my_lng);
-
-
-
-}
-
-
-function get_now() {
-		if (request.readyState == 4) {
-				// NOW GET
-			xhr = new XMLHttpRequest();
-			login = "zach"
-			xhr.open("GET", "https://protected-meadow-7856.herokuapp.com/location.json?login=" + login, true);
-
-			xhr.send();
-		}
 }
 
 </script>
@@ -41,5 +24,16 @@ function get_now() {
 
 <body onload=feed()>
 </body>
-
+<form action="sendGPS()">
+name:<br>
+<input type="text" name="name">
+<br>
+longitude:<br>
+<input type="text" name="lng">
+<br>
+latitude:<br>
+<input type="text" name="lat">
+<br>
+<input type="submit" value="Submit">
+</form
 </html>
