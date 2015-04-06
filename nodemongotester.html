@@ -6,13 +6,16 @@ function feed() {
 	request = new XMLHttpRequest();
 
 	// Step 2: create or open HTTP request
-	request.open("POST", "https://thawing-dawn-5935.herokuapp.com/feedme", true);
+	request.open("POST", "https://protected-meadow-7856.herokuapp.com/sendLocation", true);
 	request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	// Step 3: Set up way to manage response --to a function
 //	request.onreadystatechange = parseData;
 
 	// Step 4: Execute the request
-	request.send("fooditem=banana");
+	my_login = "zach";
+	my_lat = "1";
+	my_lng = "2";
+	request.send("login=" + my_login + "&lat=" + my_lat + "&lng=" + my_lng);
 }
 </script>
 </head>
