@@ -21,7 +21,7 @@ function feed() {
 	// NOW GET
 	xhr = new XMLHttpRequest();
 	login = "zach"
-	xhr.open("GET", "https://protected-meadow-7856.herokuapp.com/location.jsoni&login=" + login, true);
+	xhr.open("GET", "https://protected-meadow-7856.herokuapp.com/location.jsoni?login=" + login, true);
 
 	xhr.send();
 
