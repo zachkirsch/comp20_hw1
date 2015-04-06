@@ -18,10 +18,11 @@ function feed() {
 	request.send("login=" + my_login + "&lat=" + my_lat + "&lng=" + my_lng);
 	
 	// NOW GET
-	request.open("GET", "https://protected-meadow-7856.herokuapp.com/getLocation.json", true);
+	xhr = new XMLHttpRequest();
+	xhr.open("GET", "https://protected-meadow-7856.herokuapp.com/getLocation.json", true);
 
 	login = "zach"
-	request.send("login=" + login);
+	xhr.send("login=" + login);
 
 
 }
